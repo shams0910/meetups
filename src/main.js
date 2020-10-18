@@ -26,13 +26,13 @@ new Vue({
   created() {
     // Your web app's Firebase configuration
     var firebaseConfig = {
-      apiKey: "AIzaSyAyvt2xlp6nKYX9CmxphLApax347EGJHHI",
+      apiKey: process.env.apiKey,
       authDomain: "dev-meetups-875e8.firebaseapp.com",
       databaseURL: "https://dev-meetups-875e8.firebaseio.com",
       projectId: "dev-meetups-875e8",
       storageBucket: "gs://dev-meetups-875e8.appspot.com",
       messagingSenderId: "322784058776",
-      appId: "1:322784058776:web:85b60f89d988141e67dfed"
+      appId: process.env.appId
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
