@@ -1,6 +1,6 @@
 import Vue from "vue";
 import App from "./App.vue";
-import * as firebase from "firebase";
+import * as firebase from "firebase/app";
 import router from "./router";
 import vuetify from "./plugins/vuetify";
 import { store } from "./store";
@@ -9,6 +9,7 @@ import Alert from "./components/Shared/Alert.vue";
 import EditMeetupDialog from './components/Meetups/Edit/EditMeetupDialog.vue'
 import EditMeetupDateDialog from './components/Meetups/Edit/EditMeetupDate.vue'
 import EditMeetupTimeDialog from './components/Meetups/Edit/EditMeetupTime.vue'
+
 
 Vue.config.productionTip = false;
 Vue.component("app-alert", Alert);
