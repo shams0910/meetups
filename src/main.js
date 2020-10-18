@@ -1,6 +1,5 @@
 import Vue from "vue";
 import App from "./App.vue";
-import * as firebase from "firebase/app";
 import router from "./router";
 import vuetify from "./plugins/vuetify";
 import { store } from "./store";
@@ -9,6 +8,12 @@ import Alert from "./components/Shared/Alert.vue";
 import EditMeetupDialog from './components/Meetups/Edit/EditMeetupDialog.vue'
 import EditMeetupDateDialog from './components/Meetups/Edit/EditMeetupDate.vue'
 import EditMeetupTimeDialog from './components/Meetups/Edit/EditMeetupTime.vue'
+
+//firebase imports
+import firebase from "firebase/app";
+import 'firebase/auth'
+import 'firebase/database'
+import 'firebase/storageBucket'
 
 
 Vue.config.productionTip = false;
